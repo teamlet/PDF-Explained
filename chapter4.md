@@ -88,11 +88,11 @@ Example 4-1. Typical document information dictionary
 PDF文档中的页面字典汇集了使用这些指令使用的资源（字体，图像和其他外部数据）绘制图形和文本内容（我们在第5章和第6章中考虑）的说明。
 它还包括页面大小，以及定义裁剪等的许多其他框。
 
-表4-4总结了页面字典中的条目。
+表4-4总结了页面(Page)字典中的条目。
 
 |键|值类型|值|
 |---|---|---|
-|/Type* |name|必须是/Pages|
+|/Type* |name|必须是/Page|
 |/Parent* |间接引用字典|页面树中此节点的父节点|
 |/Resources|dictionary|页面的资源（字体，图像等）。如果完全省略此条目，则资源将从页面树中的父节点继承。如果确实没有资源，请包含此条目但使用空字典|
 |/Contents|indirect reference to stream or array of such references|一个或多个部分中页面的图形内容。如果缺少此条目，则页面为空|
